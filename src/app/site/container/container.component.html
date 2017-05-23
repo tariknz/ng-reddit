@@ -1,0 +1,14 @@
+<md-sidenav-container class="sidenav">
+  <md-sidenav #sidenav [opened]="showSideNav$ | async" [disableClose]="true">
+    <button md-button (click)="toggleSideNav()">Close</button>
+  </md-sidenav>
+
+  <md-toolbar>
+    <button md-icon-button (click)="toggleSideNav()">
+      <md-icon>menu</md-icon>
+    </button>
+
+    Reddit
+  </md-toolbar>
+  <router-outlet></router-outlet>
+</md-sidenav-container>
